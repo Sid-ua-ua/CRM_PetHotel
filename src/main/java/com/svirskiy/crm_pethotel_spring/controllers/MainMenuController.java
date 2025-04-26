@@ -39,20 +39,40 @@ public class MainMenuController implements FXMLController<String> {
 
     List<MenuCategory<?>> menuCategories = Arrays.asList(
             new MenuCategory<>("Працівники", "workers.fxml", Arrays.asList(
-                    new MenuItem<>("worker_detail.fxml", new Person("Ethan", "Williams")),
-                    new MenuItem<>("worker_detail.fxml", new Person("Emma","Jones")),
-                    new MenuItem<>("worker_detail.fxml", new Person("Michael","Brown")),
-                    new MenuItem<>("worker_detail.fxml", new Person("Anna","Black")),
-                    new MenuItem<>("worker_detail.fxml", new Person("Rodger","York")),
-                    new MenuItem<>("worker_detail.fxml", new Person("Susan","Collins"))
+                    new MenuItem<>("Worker_graph.fxml", new Person("Ethan", "Williams")),
+                    new MenuItem<>("Worker_graph.fxml", "Графік роботи"),
+                    new MenuItem<>("Registration.fxml", "Реєстрація")
+            )),
+            new MenuCategory<>("Клієнти", "Client_list.fxml", Arrays.asList(
+                    new MenuItem<>("Client_create.fxml","Додати клієнта"),
+                    new MenuItem<>("Tie_pet.fxml","Прив'язати улюбленця")
+
+            )),
+            new MenuCategory<>("Улюбленці", "Pet_list.fxml", Arrays.asList(
+                    new MenuItem<>("Pet_create.fxml","Додати улюбленця")
+
             )),
             new MenuCategory<>("Записи на заселення", "Records_list.fxml", Arrays.asList(
                     new MenuItem<>("Record_create.fxml","Додати запис")
 
             )),
-            new MenuCategory<>("Accounts Department", null, Arrays.asList(
-                    new MenuItem<>(null,"Jacob Smith"),
-                    new MenuItem<>(null,"Isabella Johnson")
+            new MenuCategory<>("Розхідник", "Material_list.fxml", Arrays.asList(
+                    new MenuItem<>( "Write_off_list.fxml","Списані розхідники"),
+                    new MenuItem<>( "Material_list.fxml","Списані за фактом виконаної роботи"),
+                    new MenuItem<>( "Material_list.fxml","Закінчується срок придатності"),
+                    new MenuItem<>("Tie_pet.fxml","Ввести закупівлю"),
+                    new MenuItem<>("Tie_pet.fxml","Списати розхідник"),
+                    new MenuItem<>( "Add_material.fxml","Додати розхідник")
+            )),
+            new MenuCategory<>("Вольєри", "Cage_list.fxml", Arrays.asList(
+                    new MenuItem<>("Add_cage.fxml","Додати вольєр"),
+                    new MenuItem<>("Cage_Find.fxml","Пошук вільного вольєру")
+            )),
+            new MenuCategory<>("Заявки на закуп", "Request_list.fxml", Arrays.asList(
+                    new MenuItem<>("Request_create.fxml","Створити заявку")
+
+            )),
+            new MenuCategory<>("Історія", "Records_list.fxml", Arrays.asList(
             ))
     );
 

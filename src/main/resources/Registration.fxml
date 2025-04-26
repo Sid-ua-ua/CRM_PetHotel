@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="310.0" prefWidth="360.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svirskiy.crm_hotelpet.Registration">
+<AnchorPane prefHeight="310.0" prefWidth="360.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svirskiy.crm_pethotel_spring.controllers.TestController">
    <children>
       <TextField layoutX="105.0" layoutY="155.0" prefHeight="23.0" prefWidth="149.0" promptText="Логін" style="-fx-background-color: #795548;">
          <font>
