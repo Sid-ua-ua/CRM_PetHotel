@@ -60,8 +60,8 @@ public class MainMenuController implements FXMLController<String> {
                     new MenuItem<>( "Write_off_list.fxml","Списані розхідники"),
                     new MenuItem<>( "Material_list.fxml","Списані за фактом виконаної роботи"),
                     new MenuItem<>( "Material_list.fxml","Закінчується срок придатності"),
-                    new MenuItem<>("Tie_pet.fxml","Ввести закупівлю"),
-                    new MenuItem<>("Tie_pet.fxml","Списати розхідник"),
+                    new MenuItem<>("Enter_purchase.fxml","Ввести закупівлю"),
+                    new MenuItem<>("Write_off.fxml","Списати розхідник"),
                     new MenuItem<>( "Add_material.fxml","Додати розхідник")
             )),
             new MenuCategory<>("Вольєри", "Cage_list.fxml", Arrays.asList(
@@ -71,8 +71,6 @@ public class MainMenuController implements FXMLController<String> {
             new MenuCategory<>("Заявки на закуп", "Request_list.fxml", Arrays.asList(
                     new MenuItem<>("Request_create.fxml","Створити заявку")
 
-            )),
-            new MenuCategory<>("Історія", "Records_list.fxml", Arrays.asList(
             ))
     );
 
